@@ -33,3 +33,158 @@ body {
   align-items: center;
   background-color: var(--off-white);
 }
+
+.container {
+  margin: 0 auto;
+  width: 72rem;
+  padding-inline: 2.4rem;
+}
+
+.app {
+  background-color: var(--white);
+  padding: 3.2rem;
+  border-radius: 20px;
+  border-bottom-right-radius: 200px;
+}
+
+.form {
+  display: flex;
+  gap: 1.6rem;
+  padding-bottom: 3.2rem;
+  border-bottom: 2px solid var(--off-white);
+  position: relative;
+  width: 100%;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.input-row span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--light-red);
+}
+
+label {
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  color: var(--smokey-grey);
+  text-transform: uppercase;
+}
+
+input {
+  font-family: inherit;
+  font-size: 3rem;
+  padding: 1.2rem 3.2rem;
+  border: 1px solid var(--light-grey);
+  border-radius: 10px;
+  width: 15rem;
+}
+
+input:focus {
+  outline: 1px solid var(--purple);
+}
+
+input::placeholder {
+  font-size: 3rem;
+}
+
+.result {
+  padding-block: 2.4rem;
+}
+
+.result p {
+  font-size: 7.4rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.result span {
+  color: var(--purple);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem;
+  position: absolute;
+  right: 0;
+  bottom: -47px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--purple);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--off-black);
+}
+
+@media screen and (max-width: 37.5em) {
+  .app {
+    padding: 4.8rem 2.4rem;
+    border-bottom-right-radius: 100px;
+  }
+
+  .form {
+    gap: 1.2rem;
+    padding-bottom: 4.8rem;
+  }
+
+  .input-row {
+    gap: 0.4rem;
+  }
+
+  .input-row span {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+
+  input {
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 1.2rem 1.6rem;
+    border: 1px solid var(--light-grey);
+    /* width: 8rem; */
+    width: 100%;
+  }
+
+  input::placeholder {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    padding-inline: 1.6rem;
+  }
+
+  .btn {
+    padding: 1.2rem;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%, 50%);
+    /* transform: translateY(); */
+  }
+
+  .btn img {
+    width: 2.4rem;
+  }
+
+  .result {
+    padding-top: 4.8rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .result p {
+    font-size: 4.4rem;
+  }
+}
